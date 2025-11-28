@@ -1,0 +1,29 @@
+header{
+    background-color: rgb(134, 12, 12);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    align-items: center;
+}
+header div{
+    display: flex;
+    width:17rem;
+    justify-content: center;
+    background-color: rgb(44, 5, 5);
+    padding-left:5%;
+    padding-right: 5%;
+    gap: 10px;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 20px;
+}
+.amoutNumber{
+   background-color:  rgb(134, 12, 12);
+   width:35px;
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   border-radius: 20px;
+}
