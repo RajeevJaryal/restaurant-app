@@ -3,16 +3,17 @@
   box-sizing: border-box;
   position: relative;
   display: flex;
-  width: 100%; 
-  height: 400px; /* or any fixed/auto size */
+  width: 100%;
+  
+  /* or any fixed/auto size */
   overflow: hidden;
 }
 
 img {
   width: 100%;
-  height: 100%;
+  height: 400px;
   object-fit: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 80%);
 
   position: absolute;
   display: block;
@@ -21,13 +22,26 @@ img {
 .summaryDiv {
   position: absolute;
   width: 50%;
-  background-color:rgb(91, 86, 86);
-  top: 50%;
+  background-color: rgb(91, 86, 86);
+  top: 240px;
   left: 50%;
-  transform: translate(-50%, -40%); /* moved down */
+  transform: translate(-50%, -40%);
+  /* moved down */
   padding: 20px;
   color: white;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
+
+.itemsDiv {
+  width: 60%;
+  max-width: 700px;
+  margin: 400px auto 0 auto; /* pushes it down & centers */
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
