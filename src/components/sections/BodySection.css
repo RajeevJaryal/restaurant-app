@@ -4,8 +4,6 @@
   position: relative;
   display: flex;
   width: 100%;
-  
-  /* or any fixed/auto size */
   overflow: hidden;
 }
 
@@ -14,7 +12,6 @@ img {
   height: 400px;
   object-fit: cover;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 80%);
-
   position: absolute;
   display: block;
 }
@@ -26,7 +23,6 @@ img {
   top: 240px;
   left: 50%;
   transform: translate(-50%, -40%);
-  /* moved down */
   padding: 20px;
   color: white;
   text-align: center;
@@ -37,11 +33,52 @@ img {
 .itemsDiv {
   width: 60%;
   max-width: 700px;
-  margin: 400px auto 0 auto; /* pushes it down & centers */
+  margin: 400px auto 0 auto; 
   background-color: white;
   color: black;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+.itemCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
 
+.price {
+  color: #a86932;
+  font-weight: bold;
+}
+
+.actionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.amountBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.amountBox input {
+  width: 45px;
+  padding: 5px;
+  border: 1px solid rgb(191, 191, 191);
+  border-radius: 6px;
+  text-align: center;
+}
+
+button {
+  background-color: #8a2b06;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  
+}
