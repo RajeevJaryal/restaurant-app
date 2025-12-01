@@ -1,11 +1,11 @@
 import React from "react";
 import "./HeaderSection.css";
-import HeaderCartButton from "./HeaderButton";
+import HeaderButton from "./HeaderButton";
 const HeaderSecction=(props)=>{
     return(
         <header>
             <h1>ReactMeals</h1>
-            <HeaderCartButton onShowCartHandler={props.showTheCart}/>
+            <HeaderButton onShowCartHandler={props.showTheCart}/>
         </header>
     );
 }
