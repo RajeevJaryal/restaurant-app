@@ -1,13 +1,24 @@
-import React,{Fragment} from "react";
+import React,{Fragment, useState} from "react";
 
-import HeaderSecction from "./components/sections/HeaderSection";
+import HeaderSecction from "./components/sections/Header/HeaderSection";
 import BodySection from "./components/sections/BodySection";
 import Cart from "./components/Cart/Cart";
 function App() {
+  const [showCart,setShowCart]=useState(false);
+
+  const showCartHandler=()=>{
+    setShowCart(true);
+  }
+
+
+  const hideCartHandler=()=>{
+    setShowCart(false);
+  }
+
   return (
     <Fragment>
-      <Cart/>
-      <HeaderSecction/>
+      {showCart && <Cart hideCart={hideCartHandler}/>}
+      <HeaderSecction showTheCart={showCartHandler}/>
       <BodySection/>
     </Fragment>
   );
